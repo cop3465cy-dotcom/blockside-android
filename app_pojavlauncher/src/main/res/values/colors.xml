@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="control_button_color">#4CC4C4C4</color>
+    <color name="control_button_pressed_color">#4D000000</color>
+    <color name="blockside_background">#F3F3E8</color>
+    <color name="blockside_surface">#FFFFFF</color>
+    <color name="blockside_surface_alt">#E7EBDD</color>
+    <color name="blockside_primary">#173B2D</color>
+    <color name="blockside_secondary">#617267</color>
+    <color name="blockside_accent">#67AD62</color>
+    <color name="blockside_accent_light">#A9D18E</color>
+    <color name="blockside_hero_start">#438854</color>
+    <color name="blockside_hero_end">#153929</color>
+    <color name="blockside_on_hero">#FFFFFF</color>
+    <color name="blockside_icon_background">#173B2D</color>
+    <color name="minebutton_color">@color/blockside_accent</color>
+    <color name="background_app">@color/blockside_background</color>
+    <color name="divider">@color/blockside_surface_alt</color>
+    <color name="background_overlay">@color/blockside_surface_alt</color>
+    <color name="background_status_bar">@color/blockside_surface</color>
+    <color name="background_bottom_bar">@color/blockside_surface</color>
+    <color name="primary_text">@color/blockside_primary</color>
+    <color name="secondary_text">@color/blockside_secondary</color>
+</resources>

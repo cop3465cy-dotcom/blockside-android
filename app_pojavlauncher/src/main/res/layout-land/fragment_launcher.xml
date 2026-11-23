@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_menu_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blockside_background">
+
+    <ScrollView
+        android:id="@+id/blockside_home_scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:fillViewport="false"
+        android:overScrollMode="never"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@id/version_panel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/blockside_home_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:paddingBottom="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_max="720dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_blockside_hero"
+                    android:clipToOutline="true"
+                    android:elevation="4dp">
+
+                    <View
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:layout_gravity="top|end"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="22dp"
+                        android:alpha="0.16"
+                        android:background="@drawable/bg_blockside_tile" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="22dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:letterSpacing="0.09"
+                            android:text="@string/blockside_home_eyebrow"
+                            android:textColor="@color/blockside_on_hero"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:fontFamily="sans"
+                            android:text="@string/blockside_home_title"
+                            android:textColor="@color/blockside_on_hero"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="@string/blockside_home_subtitle"
+                            android:textColor="@color/blockside_on_hero"
+                            android:textSize="14sp" />
+
+                        <com.kdt.mcgui.MineButton
+                            android:id="@+id/play_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="58dp"
+                            android:contentDescription="@string/main_play"
+                            android:text="@string/main_play"
+                            android:textAllCaps="true"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/blockside_quick_actions"
+                        android:textColor="@color/blockside_primary"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/blockside_quick_hint"
+                        android:textColor="@color/blockside_secondary"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <com.kdt.mcgui.LauncherMenuButton
+                        android:id="@+id/news_button"
+                        style="@style/BlocksideQuickAction"
+                        android:layout_width="0dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_menu_news"
+                        android:text="@string/blockside_guide" />
+
+                    <com.kdt.mcgui.LauncherMenuButton
+                        android:id="@+id/discord_button"
+                        style="@style/BlocksideQuickAction"
+                        android:layout_width="0dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_weight="1"
+                        android:drawableStart="@android:drawable/ic_menu_info_details"
+                        android:text="@string/blockside_engine_docs" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <com.kdt.mcgui.LauncherMenuButton
+                        android:id="@+id/custom_control_button"
+                        style="@style/BlocksideQuickAction"
+                        android:layout_width="0dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_menu_custom_controls"
+                        android:text="@string/mcl_option_customcontrol" />
+
+                    <com.kdt.mcgui.LauncherMenuButton
+                        android:id="@+id/install_jar_button"
+                        style="@style/BlocksideQuickAction"
+                        android:layout_width="0dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_menu_install_jar"
+                        android:text="@string/main_install_jar_file" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:text="@string/blockside_player_profile"
+                    android:textColor="@color/blockside_primary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_blockside_card"
+                    android:gravity="center_vertical"
+                    android:minHeight="82dp"
+                    android:orientation="vertical"
+                    android:paddingStart="18dp"
+                    android:paddingTop="14dp"
+                    android:paddingEnd="18dp"
+                    android:paddingBottom="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/blockside_profile_hint"
+                        android:textColor="@color/blockside_secondary"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/blockside_recent_worlds"
+                    android:textColor="@color/blockside_primary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_blockside_card"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+                    <TextView
+                        android:id="@+id/recent_world_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/blockside_recent_world_empty"
+                        android:textColor="@color/blockside_primary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/recent_world_subtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/blockside_recent_world_empty_detail"
+                        android:textColor="@color/blockside_secondary"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal">
+
+                        <com.kdt.mcgui.LauncherMenuButton
+                            android:id="@+id/open_files_button"
+                            style="@style/BlocksideQuickAction"
+                            android:layout_width="0dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_weight="1"
+                            android:drawableStart="@drawable/ic_folder"
+                            android:text="@string/mcl_button_open_directory" />
+
+                        <com.kdt.mcgui.LauncherMenuButton
+                            android:id="@+id/share_logs_button"
+                            style="@style/BlocksideQuickAction"
+                            android:layout_width="0dp"
+                            android:layout_marginStart="6dp"
+                            android:layout_weight="1"
+                            android:drawableStart="@android:drawable/ic_menu_share"
+                            android:text="@string/main_share_logs" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/version_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_blockside_panel"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:paddingStart="14dp"
+        android:paddingTop="9dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:letterSpacing="0.06"
+            android:text="@string/blockside_selected_version"
+            android:textColor="@color/blockside_secondary"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp">
+
+            <com.kdt.mcgui.mcVersionSpinner
+                android:id="@+id/mc_version_spinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:drawableEnd="@drawable/spinner_arrow"
+                android:textColor="@color/blockside_primary"
+                app:drawableEndPadding="@dimen/_1sdp"
+                app:drawableEndSize="@dimen/padding_heavy"
+                app:drawableStartIntegerScaling="true"
+                app:drawableStartSize="@dimen/_36sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/edit_profile_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/edit_profile_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/blockside_edit_profile"
+                android:padding="12dp"
+                android:src="@drawable/ic_edit_profile"
+                android:tint="@color/blockside_primary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

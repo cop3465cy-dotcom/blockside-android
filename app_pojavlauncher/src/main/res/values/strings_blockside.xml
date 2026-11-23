@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="blockside_home_eyebrow">MINECRAFT  •  JAVA EDITION</string>
+    <string name="blockside_home_title">Make this world yours.</string>
+    <string name="blockside_home_subtitle">Your Java worlds, versions, and controls in one place.</string>
+    <string name="blockside_quick_actions">Quick actions</string>
+    <string name="blockside_quick_hint">Built for touch</string>
+    <string name="blockside_guide">Install guide</string>
+    <string name="blockside_engine_docs">Engine docs</string>
+    <string name="blockside_settings">Settings</string>
+    <string name="blockside_player_profile">Player profile</string>
+    <string name="blockside_profile_hint">Choose your account from the top bar.</string>
+    <string name="blockside_recent_worlds">Recent worlds</string>
+    <string name="blockside_recent_world_empty">No worlds yet</string>
+    <string name="blockside_recent_world_empty_detail">Worlds saved here will appear after you play.</string>
+    <string name="blockside_recent_world_meta">%1$d saved world(s) on this device.</string>
+    <string name="blockside_selected_version">SELECTED VERSION</string>
+    <string name="blockside_edit_profile">Edit selected version profile</string>
+</resources>

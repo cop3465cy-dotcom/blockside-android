@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blockside_background">#111B16</color>
+    <color name="blockside_surface">#19271F</color>
+    <color name="blockside_surface_alt">#22352A</color>
+    <color name="blockside_primary">#E9EDCF</color>
+    <color name="blockside_secondary">#B7C6B7</color>
+    <color name="blockside_accent">#65B56A</color>
+    <color name="blockside_accent_light">#A9D18E</color>
+    <color name="blockside_hero_start">#2F7043</color>
+    <color name="blockside_hero_end">#10291E</color>
+    <color name="blockside_on_hero">#FFFFFF</color>
+    <color name="blockside_icon_background">#173B2D</color>
+    <color name="minebutton_color">@color/blockside_accent</color>
+    <color name="background_app">@color/blockside_background</color>
+    <color name="divider">@color/blockside_surface_alt</color>
+    <color name="background_overlay">@color/blockside_surface_alt</color>
+    <color name="background_status_bar">@color/blockside_surface</color>
+    <color name="background_bottom_bar">@color/blockside_surface</color>
+    <color name="primary_text">@color/blockside_primary</color>
+    <color name="secondary_text">@color/blockside_secondary</color>
+</resources>

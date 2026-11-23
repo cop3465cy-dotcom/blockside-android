@@ -1,0 +1,6 @@
+[submodule "MioLibPatcher"]
+	path = MioLibPatcher
+	url = https://github.com/AngelAuraMC/MioLibPatcher.git
+[submodule "androidnsbypass"]
+	path = androidnsbypass
+	url = https://github.com/alexytomi/androidnsbypass.git
