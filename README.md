@@ -8,9 +8,10 @@ Blockside is an Android launcher interface built on the maintained Amethyst Andr
 
 - A custom Blockside home screen, profile surface, recent-world list, quick actions, and launcher icon.
 - The Amethyst/Pojav-based Java Edition launcher engine, including its account, version, mod-loader, runtime, rendering, and input integrations.
+- Local offline username profiles for single-player with game versions already installed on the device.
 - Android builds under application ID `com.cop3465cy.blockside`.
 
-The interface, launcher engine, installed game, and game engine are distinct pieces. This app supplies the launcher and integrates a compatible Java runtime. Minecraft itself is downloaded through the launcher after sign-in; the game is proprietary software and is not bundled here. Java Edition is executed through Android-compatible runtime and graphics layers. This is not Mojang/Microsoft software and is not affiliated with them.
+The interface, launcher engine, installed game, and game engine are distinct pieces. This app supplies the launcher and integrates a compatible Java runtime. Minecraft itself is downloaded through the launcher after Microsoft sign-in; the game is proprietary software and is not bundled here. Offline profiles do not sign in, grant ownership, unlock downloads, or authenticate multiplayer servers. Java Edition is executed through Android-compatible runtime and graphics layers. This is not Mojang/Microsoft software and is not affiliated with them.
 
 ## Install
 

@@ -12,7 +12,7 @@
     <View
         android:id="@+id/login_menu"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_200sdp"
+        android:layout_height="@dimen/_250sdp"
 
         android:background="@drawable/background_card"
         android:translationZ="-1dp"
@@ -24,7 +24,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login_online_username_hint"
+        android:text="@string/blockside_offline_username_hint"
 
         app:layout_constraintBottom_toTopOf="@+id/login_edit_email"
         app:layout_constraintStart_toStartOf="@+id/login_edit_email" />
@@ -54,11 +54,24 @@
         android:layout_marginHorizontal="@dimen/_25sdp"
         android:layout_marginTop="@dimen/padding_heavy"
         android:onClick="loginMC"
-        android:text="@string/login_online_login_label"
+        android:text="@string/blockside_offline_login_button"
 
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_edit_email" />
+
+    <TextView
+        android:id="@+id/offline_login_note"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/padding_light"
+        android:text="@string/blockside_offline_login_note"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="@id/login_menu"
+        app:layout_constraintStart_toStartOf="@id/login_menu"
+        app:layout_constraintTop_toBottomOf="@id/login_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

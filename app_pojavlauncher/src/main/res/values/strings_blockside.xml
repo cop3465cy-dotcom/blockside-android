@@ -16,4 +16,8 @@
     <string name="blockside_recent_world_meta">%1$d saved world(s) on this device.</string>
     <string name="blockside_selected_version">SELECTED VERSION</string>
     <string name="blockside_edit_profile">Edit selected version profile</string>
+    <string name="blockside_offline_auth_option">Offline username</string>
+    <string name="blockside_offline_username_hint">Choose a local player name (3–16 letters, numbers, or underscores).</string>
+    <string name="blockside_offline_login_button">Continue offline</string>
+    <string name="blockside_offline_login_note">Works with game versions already installed on this device. Offline profiles do not sign in to Microsoft or unlock game downloads or online servers.</string>
 </resources>
